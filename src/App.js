@@ -2,13 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BusinessList from './components/BusinessList';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    <div>
+      <SearchBar />
       <BusinessList />
     </div>
   );

@@ -30,11 +30,11 @@ const businesses = [
 
 const BusinessList = () => {
     return (
-        <div>
+        <span>
             {businesses.map((business, index) => (
                 <Business key={index} business={business} />
             ))}
-        </div>
+        </span>
     );
 };
 

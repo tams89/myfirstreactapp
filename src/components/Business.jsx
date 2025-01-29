@@ -2,7 +2,7 @@ import React from 'react';
 
 const Business = ({ business }) => {
     return (
-        <div>
+        <span>
             <h1>{business.name}</h1>
             <img src={business.image} alt={business.name} />
             <p>{business.address}</p>
@@ -10,7 +10,7 @@ const Business = ({ business }) => {
             <p>Category: {business.category}</p>
             <p>Rating: {business.rating}</p>
             <p>Reviews: {business.reviewCount}</p>
-        </div>
+        </span>
     );
 };
 
