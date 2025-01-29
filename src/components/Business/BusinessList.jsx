@@ -1,6 +1,6 @@
 import React from 'react';
 import Business from './Business';
-import BusinessModel from '../models/Business';
+import BusinessModel from '../../models/Business';
 
 const businesses = [
     new BusinessModel(
