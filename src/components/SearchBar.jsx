@@ -14,7 +14,7 @@ const SearchBar = () => {
             flexDirection: 'column', 
             alignItems: 'center', 
             width: '100%', 
-            backgroundImage: 'url(https://source.unsplash.com/random)', 
+            backgroundImage: "url('https://www.foodandwine.com/thmb/K9zYrbzvWUqU8B2BfDF3ht4tNU8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/short-rib-chili-with-pickled-red-onion-FT-RECIPE0222-2-cb71113b52c14256b7686e70cefa0a2e.jpg')", 
             backgroundSize: 'cover', 
             backgroundPosition: 'center', 
             p: 3, 
