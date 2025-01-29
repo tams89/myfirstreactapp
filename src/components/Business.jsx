@@ -1,19 +1,6 @@
 import React from 'react';
-import BusinessModel from '../models/Business';
 
-const business = new BusinessModel(
-    'https://via.placeholder.com/150',
-    'Business Name',
-    '123 Business St',
-    'Business City',
-    'BS',
-    '12345',
-    'Category',
-    4.5,
-    90
-);
-
-const Business = () => {
+const Business = ({ business }) => {
     return (
         <div>
             <h1>{business.name}</h1>
