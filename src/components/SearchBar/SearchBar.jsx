@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import {
   Button,
@@ -6,10 +7,9 @@ import {
   ToggleButtonGroup,
   ToggleButton
 } from "@mui/material";
-import fetchData from "../../Utils/ApiHelper";
 
-const SearchBar = () => {
-  const [selectedSort, setAlignment] = useState("bestmatch");
+const SearchBar = ({searchYelp}) => {
+  const [selectedSort, setAlignment] = useState("best_match");
   const [searchTerm, setSearchTerm] = useState("");
   const [location, setLocation] = useState("");
 
@@ -27,9 +27,7 @@ const SearchBar = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const data = await fetchData(searchTerm, location, selectedSort);
-    console.log(data);
-    console.log(`Search Term: ${searchTerm}, Location: ${location}, Sort By: ${selectedSort}`);
+    searchYelp(searchTerm, location, selectedSort);
   };
 
   return (
@@ -61,14 +59,14 @@ const SearchBar = () => {
         aria-label="sorting type"
       >
         <ToggleButton
-          value="bestmatch"
+          value="best_match"
           aria-label="Best Match"
           title="Best Match"
         >
           Best Match
         </ToggleButton>
         <ToggleButton
-          value="highestrated"
+          value="review_count"
           aria-label="Highest Rated"
           title="Highest Rated"
         >
