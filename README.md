@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Purpose: 
+To demo a simple react app using good patterns.
+
+## Technologies Used: 
+React, JavaScript, npm, node, material-ui
+
+## Features: 
+Searching for restaurents based on location and sortable by three categories.
+
+## Future Work: 
+Improve general styling at layout. Especially of the cards.
+
 ## Available Scripts
 
 In the project directory, you can run:
