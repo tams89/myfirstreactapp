@@ -2,13 +2,13 @@
 import React from 'react';
 import { Card, CardContent, CardActionArea, CardMedia, Typography, Grid2 } from '@mui/material';
 
-const Business = ({ business, key }) => {
+const Business = ({ business }) => {
     const [selectedCard, setSelectedCard] = React.useState(0);
     return (
         <Card variant='outline' sx={{ maxWidth: 345, height: '100%' }}>
             <CardActionArea
-                onClick={() => setSelectedCard(key)}
-                data-active={selectedCard === key ? '' : undefined}
+                onClick={() => setSelectedCard(business.id)}
+                data-active={selectedCard === business.id ? '' : undefined}
                 sx={{
                     backgroundColor: 'rgba(255,255,255,0.80)',
                     outline: 'none',

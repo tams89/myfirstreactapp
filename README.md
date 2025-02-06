@@ -12,7 +12,9 @@ React, JavaScript, npm, node, material-ui
 Searching for restaurents based on location and sortable by three categories.
 
 ## Future Work: 
-Improve general styling at layout. Especially of the cards.
+- Improve general styling at layout. Especially of the cards.
+- Fix setSelectedCard() in Business.jsx
+- Fix rendering of images on the business cards.
 
 ## Available Scripts
 
