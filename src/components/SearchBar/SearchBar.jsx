@@ -12,20 +12,26 @@ const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [location, setLocation] = useState("");
 
-  const handleSort = event => {
+  const handleSort = (event) => {
     setAlignment(event.target.value);
   };
 
-  const handleSearchTerm = event => {
+  const handleSearchTerm = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const handleLocation = event => {
+  const handleLocation = (event) => {
     setLocation(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(`Search Term: ${searchTerm}, Location: ${location}, Sort By: ${selectedSort}`);
   };
 
   return (
     <Box
+      onSubmit={handleSubmit}
       component="form"
       sx={{
         display: "flex",
