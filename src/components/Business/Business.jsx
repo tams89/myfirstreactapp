@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Card, CardContent, CardActionArea, CardMedia, Typography, Grid2 } from '@mui/material';
 

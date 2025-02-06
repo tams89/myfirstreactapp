@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import Business from './Business';
+import Business from '../Business/Business';
 import { Box } from '@mui/material';
 
 const BusinessList = ({items}) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import BusinessList from "./components/Business/BusinessList";
+import BusinessList from "./components/BusinessList/BusinessList";
 import SearchBar from "./components/SearchBar/SearchBar";
 import { Container } from "@mui/material";
 import BusinessModel from "././models/Business";
