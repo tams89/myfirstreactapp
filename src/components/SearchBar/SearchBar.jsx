@@ -6,6 +6,7 @@ import {
   ToggleButtonGroup,
   ToggleButton
 } from "@mui/material";
+import fetchData from "../../Utils/ApiHelper";
 
 const SearchBar = () => {
   const [selectedSort, setAlignment] = useState("bestmatch");
@@ -24,8 +25,10 @@ const SearchBar = () => {
     setLocation(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    const data = await fetchData(searchTerm, location, selectedSort);
+    console.log(data);
     console.log(`Search Term: ${searchTerm}, Location: ${location}, Sort By: ${selectedSort}`);
   };
 
